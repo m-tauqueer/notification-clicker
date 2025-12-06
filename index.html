@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Notify Me!</h1>
+        <p>Click below to test the API.</p>
+
+        <button id="btn-enable" onclick="askPermission()">
+            1. Enable Notifications
+        </button>
+
+        <button id="btn-notify" onclick="sendNotification()" disabled>
+            2. Send Notification
+        </button>
+
+        <div class="status" id="status-msg">Status: Waiting for permission...</div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
